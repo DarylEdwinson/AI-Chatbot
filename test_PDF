@@ -1,0 +1,4 @@
+import fitz
+
+doc = fitz.open("your_test_file.pdf")
+print(doc)
