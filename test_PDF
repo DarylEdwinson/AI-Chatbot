@@ -1,4 +1,6 @@
-import fitz
+from src.ingestion.pdf_loader import extract_text_from_pdf
 
-doc = fitz.open("your_test_file.pdf")
-print(doc)
+pages = extract_text_from_pdf("Getting Started with OneDrive.pdf")
+for page in pages:
+    print(page["page_number"], page["source"], page["text"][:50])
+    
