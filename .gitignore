@@ -1,0 +1,24 @@
+# Environment
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Vector store (local DB — don't commit)
+vectorstore/
+
+# Uploaded PDFs (user data)
+data/pdfs/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
